@@ -1,0 +1,16 @@
+TY  - JOUR
+AU  - Ardeshirifar, Ramtin
+PY  - 2025
+DA  - 2025/08/01
+TI  - Comparing hand-crafted and deep learning approaches for detecting AI-generated text: performance, generalization, and linguistic insights
+JO  - AI and Ethics
+SP  - 4197
+EP  - 4209
+VL  - 5
+IS  - 4
+AB  - This study investigates techniques for detecting machine-generated text, a critical task in the era of advanced language models. We compare two approaches: a hand-crafted feature-based method and a deep learning method using RoBERTa. Experiments were conducted on diverse datasets, including the Human ChatGPT Comparison Corpus (HC3) and GPT-2 outputs. The hand-crafted approach achieved 94% F1 score on HC3 but struggled with cross-dataset generalization. In contrast, the RoBERTa-based method demonstrated superior performance and adaptability, achieving 98% F1 score on HC3 and 97.68% on GPT-2. Our findings underscore the need for adaptive detection methods as language models evolve. This research contributes to the development of robust techniques for identifying AI-generated content, addressing critical challenges in AI ethics and responsible technology use.
+SN  - 2730-5961
+UR  - https://doi.org/10.1007/s43681-025-00699-4
+DO  - 10.1007/s43681-025-00699-4
+ID  - Ardeshirifar2025
+ER  - 

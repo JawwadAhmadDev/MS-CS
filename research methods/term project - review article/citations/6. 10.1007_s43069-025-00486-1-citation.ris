@@ -1,0 +1,16 @@
+TY  - JOUR
+AU  - Yadav, Abhishek
+AU  - MC, Shunmuga Priya
+PY  - 2025
+DA  - 2025/06/04
+TI  - Classifying AI vs. Human Content: Integrating BERT and Linguistic Features for Enhanced Classification
+JO  - Operations Research Forum
+SP  - 77
+VL  - 6
+IS  - 2
+AB  - This study advances the detection of AI-generated content through a novel methodology integrating BERT (bidirectional encoder representations from transformers) with comprehensive linguistic features. The research evaluates three distinct frameworks: utilizing BERT’s last hidden layer outputs independently, combining BERT outputs with its predictions, and a hybrid approach incorporating both BERT-derived features and linguistic markers including readability scores, lexical diversity measures, and structural patterns. Experiments across these frameworks employ logistic regression, random forest, and XGBoost classifiers, with the hybrid XGBoost approach achieving superior accuracy of 83.57% on test data. To enhance transparency and understanding, the study implements LIME (local interpretable model-agnostic explanations), revealing key influential factors in classification decisions—notably BERT encodings and specific linguistic features such as Yule’s Characteristic K, Flesch Reading Ease, and Gunning Fog Index. The integration of machine learning with traditional linguistic analysis demonstrates significant advantages over single-method approaches, particularly in handling diverse writing styles and content types. The findings demonstrate that combining deep learning architectures with traditional linguistic analysis yields more robust AI content detection systems, contributing significantly to digital content verification capabilities and authenticity assessment tools. This research addresses the growing challenge of distinguishing between human and AI-generated content in various domains, including academic writing, news articles, and online content, offering practical applications for content moderation, plagiarism detection, and digital authenticity verification systems.
+SN  - 2662-2556
+UR  - https://doi.org/10.1007/s43069-025-00486-1
+DO  - 10.1007/s43069-025-00486-1
+ID  - Yadav2025
+ER  - 

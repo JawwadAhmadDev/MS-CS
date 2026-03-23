@@ -1,0 +1,361 @@
+{
+  "access": {
+    "embargo": {
+      "active": false,
+      "reason": null
+    },
+    "files": "public",
+    "record": "public",
+    "status": "open"
+  },
+  "created": "2023-12-27T00:52:23.088720+00:00",
+  "custom_fields": {
+    "meeting:meeting": {
+      "place": "Amsterdam",
+      "title": "Winter Conference 2023 IOPS",
+      "url": "https://www.iops.nl/"
+    }
+  },
+  "deletion_status": {
+    "is_deleted": false,
+    "status": "P"
+  },
+  "files": {
+    "count": 1,
+    "enabled": true,
+    "entries": {
+      "IOPS2023 Poster- Hadi Mohammadi- UU copy.pdf": {
+        "access": {
+          "hidden": false
+        },
+        "checksum": "md5:07f968901e5bda78bd354bc849e9d8b6",
+        "ext": "pdf",
+        "id": "1fb5df5e-bd91-4455-a0fe-1232b9844388",
+        "key": "IOPS2023 Poster- Hadi Mohammadi- UU copy.pdf",
+        "links": {
+          "content": "https://zenodo.org/api/records/10433745/files/IOPS2023%20Poster-%20Hadi%20Mohammadi-%20UU%20copy.pdf/content",
+          "iiif_api": "https://zenodo.org/api/iiif/record:10433745:IOPS2023%20Poster-%20Hadi%20Mohammadi-%20UU%20copy.pdf/full/full/0/default.png",
+          "iiif_base": "https://zenodo.org/api/iiif/record:10433745:IOPS2023%20Poster-%20Hadi%20Mohammadi-%20UU%20copy.pdf",
+          "iiif_canvas": "https://zenodo.org/api/iiif/record:10433745/canvas/IOPS2023%20Poster-%20Hadi%20Mohammadi-%20UU%20copy.pdf",
+          "iiif_info": "https://zenodo.org/api/iiif/record:10433745:IOPS2023%20Poster-%20Hadi%20Mohammadi-%20UU%20copy.pdf/info.json",
+          "self": "https://zenodo.org/api/records/10433745/files/IOPS2023%20Poster-%20Hadi%20Mohammadi-%20UU%20copy.pdf"
+        },
+        "metadata": null,
+        "mimetype": "application/pdf",
+        "size": 5357847,
+        "storage_class": "L"
+      }
+    },
+    "order": [],
+    "total_bytes": 5357847
+  },
+  "id": "10433745",
+  "is_draft": false,
+  "is_published": true,
+  "links": {
+    "access": "https://zenodo.org/api/records/10433745/access",
+    "access_grants": "https://zenodo.org/api/records/10433745/access/grants",
+    "access_links": "https://zenodo.org/api/records/10433745/access/links",
+    "access_request": "https://zenodo.org/api/records/10433745/access/request",
+    "access_users": "https://zenodo.org/api/records/10433745/access/users",
+    "archive": "https://zenodo.org/api/records/10433745/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10433745/media-files-archive",
+    "communities": "https://zenodo.org/api/records/10433745/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10433745/communities-suggestions",
+    "doi": "https://doi.org/10.5281/zenodo.10433745",
+    "draft": "https://zenodo.org/api/records/10433745/draft",
+    "file_modification": "https://zenodo.org/api/records/10433745/file-modification",
+    "files": "https://zenodo.org/api/records/10433745/files",
+    "latest": "https://zenodo.org/api/records/10433745/versions/latest",
+    "latest_html": "https://zenodo.org/records/10433745/latest",
+    "media_files": "https://zenodo.org/api/records/10433745/media-files",
+    "parent": "https://zenodo.org/api/records/10433744",
+    "parent_doi": "https://doi.org/10.5281/zenodo.10433744",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10433744",
+    "parent_html": "https://zenodo.org/records/10433744",
+    "preview_html": "https://zenodo.org/records/10433745?preview=1",
+    "request_deletion": "https://zenodo.org/api/records/10433745/request-deletion",
+    "requests": "https://zenodo.org/api/records/10433745/requests",
+    "reserve_doi": "https://zenodo.org/api/records/10433745/draft/pids/doi",
+    "self": "https://zenodo.org/api/records/10433745",
+    "self_doi": "https://doi.org/10.5281/zenodo.10433745",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10433745",
+    "self_html": "https://zenodo.org/records/10433745",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10433745/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10433745/sequence/default",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:10433745:IOPS2023%20Poster-%20Hadi%20Mohammadi-%20UU%20copy.pdf/full/%5E10,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:10433745:IOPS2023%20Poster-%20Hadi%20Mohammadi-%20UU%20copy.pdf/full/%5E100,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:10433745:IOPS2023%20Poster-%20Hadi%20Mohammadi-%20UU%20copy.pdf/full/%5E1200,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:10433745:IOPS2023%20Poster-%20Hadi%20Mohammadi-%20UU%20copy.pdf/full/%5E250,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:10433745:IOPS2023%20Poster-%20Hadi%20Mohammadi-%20UU%20copy.pdf/full/%5E50,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:10433745:IOPS2023%20Poster-%20Hadi%20Mohammadi-%20UU%20copy.pdf/full/%5E750,/0/default.jpg"
+    },
+    "versions": "https://zenodo.org/api/records/10433745/versions"
+  },
+  "media_files": {
+    "count": 1,
+    "enabled": true,
+    "entries": {
+      "IOPS2023 Poster- Hadi Mohammadi- UU copy.pdf.ptif": {
+        "access": {
+          "hidden": true
+        },
+        "ext": "ptif",
+        "id": "64605577-eb46-47d8-8f86-ed2ca48502b8",
+        "key": "IOPS2023 Poster- Hadi Mohammadi- UU copy.pdf.ptif",
+        "links": {
+          "content": "https://zenodo.org/api/records/10433745/files/IOPS2023%20Poster-%20Hadi%20Mohammadi-%20UU%20copy.pdf.ptif/content",
+          "self": "https://zenodo.org/api/records/10433745/files/IOPS2023%20Poster-%20Hadi%20Mohammadi-%20UU%20copy.pdf.ptif"
+        },
+        "metadata": null,
+        "mimetype": "application/octet-stream",
+        "processor": {
+          "source_file_id": "1fb5df5e-bd91-4455-a0fe-1232b9844388",
+          "status": "finished",
+          "type": "image-tiles"
+        },
+        "size": 0,
+        "storage_class": "L"
+      }
+    },
+    "order": [],
+    "total_bytes": 0
+  },
+  "metadata": {
+    "creators": [
+      {
+        "affiliations": [
+          {
+            "id": "04pp8hn57",
+            "identifiers": [
+              {
+                "identifier": "04pp8hn57",
+                "scheme": "ror"
+              },
+              {
+                "identifier": "grid.5477.1",
+                "scheme": "grid"
+              },
+              {
+                "identifier": "0000 0000 9637 0671",
+                "scheme": "isni"
+              }
+            ],
+            "name": "Utrecht University"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Mohammadi",
+          "given_name": "Hadi",
+          "identifiers": [
+            {
+              "identifier": "0000-0003-0860-9200",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Mohammadi, Hadi",
+          "type": "personal"
+        },
+        "role": {
+          "id": "contactperson",
+          "title": {
+            "de": "Kontaktperson",
+            "en": "Contact person"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "id": "04pp8hn57",
+            "identifiers": [
+              {
+                "identifier": "04pp8hn57",
+                "scheme": "ror"
+              },
+              {
+                "identifier": "grid.5477.1",
+                "scheme": "grid"
+              },
+              {
+                "identifier": "0000 0000 9637 0671",
+                "scheme": "isni"
+              }
+            ],
+            "name": "Utrecht University"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Giachanou",
+          "given_name": "Anastasia",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-7601-8667",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Giachanou, Anastasia",
+          "type": "personal"
+        },
+        "role": {
+          "id": "supervisor",
+          "title": {
+            "de": "SupervisorIn",
+            "en": "Supervisor"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "id": "04pp8hn57",
+            "identifiers": [
+              {
+                "identifier": "04pp8hn57",
+                "scheme": "ror"
+              },
+              {
+                "identifier": "grid.5477.1",
+                "scheme": "grid"
+              },
+              {
+                "identifier": "0000 0000 9637 0671",
+                "scheme": "isni"
+              }
+            ],
+            "name": "Utrecht University"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Bagheri",
+          "given_name": "Ayoub",
+          "identifiers": [
+            {
+              "identifier": "0000-0001-6366-2173",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Bagheri, Ayoub",
+          "type": "personal"
+        },
+        "role": {
+          "id": "supervisor",
+          "title": {
+            "de": "SupervisorIn",
+            "en": "Supervisor"
+          }
+        }
+      }
+    ],
+    "description": "<p><em>Our research tackles the challenge of distinguishing between human and AI-generated text, a crucial issue in the era of advanced language models. We propose </em><em>a unique approach using an ensemble and mixed-model strategy, focusing on accuracy and explainability. This method involves a variety of advanced text classification&nbsp;</em><em>algorithms, applied to both English and Dutch texts across multiple genres. Notably, our work integrates SHapley Additive exPlanations (SHAP) for </em><em>clearer insights into model decisions, emphasizing the importance of explainable AI (XAI). Our study is significant in ensuring the authenticity and integrity </em><em>of digital content in an increasingly AI-driven world.</em></p>\n<p><em>Keywords: AI-generated Text Detection, Ensemble Model, Explainable AI (XAI), Natural Language Processing (NLP), Transformer-Based Models.</em></p>",
+    "languages": [
+      {
+        "id": "eng",
+        "title": {
+          "en": "English"
+        }
+      }
+    ],
+    "publication_date": "2023-12-22",
+    "publisher": "Zenodo",
+    "resource_type": {
+      "id": "poster",
+      "title": {
+        "de": "Poster",
+        "en": "Poster"
+      }
+    },
+    "rights": [
+      {
+        "description": {
+          "en": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited."
+        },
+        "icon": "cc-by-icon",
+        "id": "cc-by-4.0",
+        "props": {
+          "scheme": "spdx",
+          "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        },
+        "title": {
+          "en": "Creative Commons Attribution 4.0 International"
+        }
+      }
+    ],
+    "subjects": [
+      {
+        "subject": "AI-generated Text Detection"
+      },
+      {
+        "subject": "Ensemble Model"
+      },
+      {
+        "subject": "Explainable AI (XAI)"
+      },
+      {
+        "subject": "Natural Language Processing (NLP)"
+      },
+      {
+        "subject": "Transformer-Based Models"
+      }
+    ],
+    "title": "Towards Explainable AI-Generated Text Detection Using Ensemble and Combined Model Training"
+  },
+  "parent": {
+    "access": {
+      "owned_by": {
+        "user": "582887"
+      },
+      "settings": {
+        "accept_conditions_text": null,
+        "allow_guest_requests": false,
+        "allow_user_requests": false,
+        "secret_link_expiration": 0
+      }
+    },
+    "communities": {},
+    "id": "10433744",
+    "pids": {
+      "doi": {
+        "client": "datacite",
+        "identifier": "10.5281/zenodo.10433744",
+        "provider": "datacite"
+      }
+    }
+  },
+  "pids": {
+    "doi": {
+      "client": "datacite",
+      "identifier": "10.5281/zenodo.10433745",
+      "provider": "datacite"
+    },
+    "oai": {
+      "identifier": "oai:zenodo.org:10433745",
+      "provider": "oai"
+    }
+  },
+  "revision_id": 8,
+  "stats": {
+    "all_versions": {
+      "data_volume": 701877957.0,
+      "downloads": 131,
+      "unique_downloads": 106,
+      "unique_views": 179,
+      "views": 196
+    },
+    "this_version": {
+      "data_volume": 701877957.0,
+      "downloads": 131,
+      "unique_downloads": 106,
+      "unique_views": 179,
+      "views": 196
+    }
+  },
+  "status": "published",
+  "swh": {},
+  "updated": "2024-07-07T16:23:07.367544+00:00",
+  "versions": {
+    "index": 1,
+    "is_latest": true
+  }
+}

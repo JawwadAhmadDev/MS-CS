@@ -1,0 +1,21 @@
+TY  - JOUR
+AU  - Masih, Adven
+AU  - Afzal, Bushra
+AU  - Firdoos, Shamyla
+AU  - Mahmood, Jabar
+AU  - Ali, Aitizaz
+AU  - Abdulnabi, Mohamed Shabbir
+AU  - Balungu, Daniel Musafiri
+PY  - 2025
+DA  - 2025/12/08
+TI  - Classifying human vs. AI text with machine learning and explainable transformer models
+JO  - Scientific Reports
+SP  - 43310
+VL  - 15
+IS  - 1
+AB  - The rapid proliferation of AI-generated text from models such as ChatGPT-3.5 and ChatGPT-4 has raised critical challenges in verifying content authenticity and ensuring ethical use of language technologies. This study presents a comprehensive framework for distinguishing between human-written and GPT-generated text using a combination of machine learning, sequential deep learning, and transformer-based models. A balanced dataset of 20,000 samples was compiled, incorporating diverse linguistic and topical sources. Traditional algorithms and sequential architectures (LSTM, GRU, BiLSTM, BiGRU) were compared against advanced transformer models, including BERT, DistilBERT, ALBERT, and RoBERTa. Experimental findings revealed that RoBERTa achieved the highest performance (Accuracy = 96.1%), outperforming all baselines. Post-hoc temperature scaling (T = 1.476) improved calibration, while threshold tuning (t = 0.957) enhanced precision for high-stakes applications. McNemar’s test with Holm correction confirmed the statistical significance (p < 0.05) of RoBERTa’s superiority. Efficiency analysis showed optimal trade-offs between accuracy and latency, and 20% pruning demonstrated sustainability potential. Furthermore, LIME and SHAP explainability analyses highlighted linguistic distinctions between AI-generated and human-authored text, and fine-grained error evaluation confirmed model robustness across text lengths. In conclusion, RoBERTa emerges as a reliable, interpretable, and computationally efficient model for detecting AI-generated content.
+SN  - 2045-2322
+UR  - https://doi.org/10.1038/s41598-025-27377-z
+DO  - 10.1038/s41598-025-27377-z
+ID  - Masih2025
+ER  - 
