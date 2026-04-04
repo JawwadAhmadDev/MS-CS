@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Theme 3 Diagram</title>
+<style>
+  body { font-family: sans-serif; background: #fff; margin: 0; padding: 16px; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #1a1a1a; }
+  }
+</style>
+</head>
+<body>
+<svg width="100%" viewBox="0 0 680 380" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
+
+<text x="340" y="22" text-anchor="middle" font-size="13" font-weight="500" fill="#1a1a1a">Theme 3 — from binary detection toward attribution and domain specificity</text>
+
+<!-- Binary detection start -->
+<rect x="240" y="36" width="200" height="40" rx="8" fill="#F1EFE8" stroke="#888780" stroke-width="0.8"/>
+<text x="340" y="52" text-anchor="middle" font-size="11" font-weight="500" fill="#2C2C2A">Binary detection baseline</text>
+<text x="340" y="67" text-anchor="middle" font-size="10" fill="#5F5E5A">Human vs. AI — one decision</text>
+
+<!-- Arrow down and split -->
+<line x1="340" y1="76" x2="340" y2="95" stroke="#ccc" stroke-width="1" marker-end="url(#arrow)"/>
+
+<!-- Adilazuarda - no single method wins -->
+<rect x="190" y="95" width="300" height="40" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.7"/>
+<text x="340" y="111" text-anchor="middle" font-size="11" font-weight="500" fill="#412402">Adilazuarda et al. (2023) — comparative analysis</text>
+<text x="340" y="125" text-anchor="middle" font-size="10" fill="#854F0B">No single paradigm dominates across all domains</text>
+
+<!-- Arrow splits into three paths -->
+<path d="M340 135 L340 148 L130 148 L130 168" fill="none" stroke="#ccc" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M340 135 L340 168" fill="none" stroke="#ccc" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M340 135 L340 148 L550 148 L550 168" fill="none" stroke="#ccc" stroke-width="0.8" marker-end="url(#arrow)"/>
+
+<!-- Three paths: Attribution | Domain | Scalability -->
+<rect x="30" y="168" width="200" height="64" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.7"/>
+<text x="130" y="185" text-anchor="middle" font-size="11" font-weight="500" fill="#412402">Multi-LLM attribution</text>
+<text x="130" y="200" text-anchor="middle" font-size="10" fill="#854F0B">Najjar et al. (2025)</text>
+<text x="130" y="214" text-anchor="middle" font-size="10" fill="#854F0B">Zahraa et al. (2025)</text>
+<text x="130" y="228" text-anchor="middle" font-size="10" fill="#633806">XAI author profiles per LLM</text>
+
+<rect x="240" y="168" width="200" height="64" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.7"/>
+<text x="340" y="185" text-anchor="middle" font-size="11" font-weight="500" fill="#412402">Domain-specific detection</text>
+<text x="340" y="200" text-anchor="middle" font-size="10" fill="#854F0B">Baharifar et al. (2025)</text>
+<text x="340" y="214" text-anchor="middle" font-size="10" fill="#854F0B">Medical misinformation</text>
+<text x="340" y="228" text-anchor="middle" font-size="10" fill="#633806">Epistemic hedging as signal</text>
+
+<rect x="450" y="168" width="200" height="64" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.7"/>
+<text x="550" y="185" text-anchor="middle" font-size="11" font-weight="500" fill="#412402">Scalable source ID</text>
+<text x="550" y="200" text-anchor="middle" font-size="10" fill="#854F0B">Iqbal &amp; Kashem (2025)</text>
+<text x="550" y="214" text-anchor="middle" font-size="10" fill="#854F0B">Ensemble ML framework</text>
+<text x="550" y="228" text-anchor="middle" font-size="10" fill="#633806">Accessible, lower-cost</text>
+
+<!-- Shared outcome -->
+<path d="M130 232 L130 270 L340 270" fill="none" stroke="#EF9F27" stroke-width="0.8" marker-end="url(#arrow)"/>
+<line x1="340" y1="232" x2="340" y2="270" stroke="#EF9F27" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M550 232 L550 270 L340 270" fill="none" stroke="#EF9F27" stroke-width="0.8" marker-end="url(#arrow)"/>
+
+<rect x="100" y="270" width="480" height="44" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.8"/>
+<text x="340" y="287" text-anchor="middle" font-size="11" font-weight="500" fill="#412402">XAI as attribution tool — the key Theme 3 contribution</text>
+<text x="340" y="304" text-anchor="middle" font-size="10" fill="#854F0B">Feature importance profiles distinguish which LLM wrote a text and why — going beyond binary classification</text>
+
+<!-- Limitation band -->
+<rect x="30" y="330" width="620" height="36" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="340" y="346" text-anchor="middle" font-size="11" font-weight="500" fill="#712B13">Shared limitation: profiles require retraining as LLMs evolve — generalization to future models unproven</text>
+<text x="340" y="360" text-anchor="middle" font-size="10" fill="#993C1D">Computational cost of multi-label transformer pipelines also limits real-world deployment feasibility</text>
+</svg>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Paradigm Comparison</title>
+<style>
+  body { font-family: sans-serif; background: #fff; margin: 0; padding: 16px; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #1a1a1a; }
+    .axis-label { fill: #c2c0b6 !important; }
+    .title-text { fill: #e8e6dc !important; }
+    .legend-text { fill: #c2c0b6 !important; }
+    .grid-line { stroke: #444441 !important; }
+    .axis-line { stroke: #5F5E5A !important; }
+    .note-text { fill: #9c9a92 !important; }
+  }
+</style>
+</head>
+<body>
+<svg width="100%" viewBox="0 0 680 440" xmlns="http://www.w3.org/2000/svg">
+
+<text x="340" y="22" text-anchor="middle" font-size="13" font-weight="500" fill="#1a1a1a" class="title-text">Three detection paradigms — comparison across four dimensions</text>
+
+<!-- Radar chart centre: 240, 220. Radius: 130 -->
+<!-- 4 axes at 0°(top), 90°(right), 180°(bottom), 270°(left) -->
+<!-- top=Accuracy, right=Interpretability, bottom=Generalizability, left=Adversarial robustness -->
+
+<!-- Grid circles -->
+<circle cx="240" cy="220" r="130" fill="none" stroke="#ddd" stroke-width="0.5" class="grid-line"/>
+<circle cx="240" cy="220" r="97"  fill="none" stroke="#ddd" stroke-width="0.5" class="grid-line"/>
+<circle cx="240" cy="220" r="65"  fill="none" stroke="#ddd" stroke-width="0.5" class="grid-line"/>
+<circle cx="240" cy="220" r="33"  fill="none" stroke="#ddd" stroke-width="0.5" class="grid-line"/>
+
+<!-- Grid scale labels -->
+<text x="244" y="218" font-size="9" fill="#bbb" class="axis-label">25</text>
+<text x="244" y="186" font-size="9" fill="#bbb" class="axis-label">50</text>
+<text x="244" y="154" font-size="9" fill="#bbb" class="axis-label">75</text>
+<text x="244" y="122" font-size="9" fill="#bbb" class="axis-label">100</text>
+
+<!-- Axes -->
+<line x1="240" y1="90"  x2="240" y2="350" stroke="#ccc" stroke-width="0.8" class="axis-line"/>
+<line x1="110" y1="220" x2="370" y2="220" stroke="#ccc" stroke-width="0.8" class="axis-line"/>
+
+<!-- Axis labels -->
+<text x="240" y="80"  text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a" class="axis-label">Accuracy</text>
+<text x="388" y="224" text-anchor="start"  font-size="12" font-weight="500" fill="#1a1a1a" class="axis-label">Interpretability</text>
+<text x="240" y="372" text-anchor="middle" font-size="12" font-weight="500" fill="#1a1a1a" class="axis-label">Generalizability</text>
+<text x="96"  y="224" text-anchor="end"    font-size="12" font-weight="500" fill="#1a1a1a" class="axis-label">Adversarial robustness</text>
+
+<!-- 
+  Scores (0-100 mapped to radius 0-130):
+  Stylometric:      Accuracy=65, Interp=90, General=70, Adv=85
+  Transformer:      Accuracy=91, Interp=72, General=62, Adv=38
+  Multi-label:      Accuracy=80, Interp=82, General=75, Adv=55
+
+  top    = cy - r*(score/100)  → x=240, y=220-r*(s/100)
+  right  = cx + r*(score/100)  → x=240+r*(s/100), y=220
+  bottom = cy + r*(score/100)  → x=240, y=220+r*(s/100)
+  left   = cx - r*(score/100)  → x=240-r*(s/100), y=220
+-->
+
+<!-- Stylometric polygon: Acc=65→84.5, Interp=90→117, General=70→91, Adv=85→110.5 -->
+<!-- top: 240, 220-84.5=135.5 | right: 240+117=357, 220 | bottom: 240, 220+91=311 | left: 240-110.5=129.5, 220 -->
+<polygon points="240,135.5 357,220 240,311 129.5,220"
+  fill="#EEEDFE" fill-opacity="0.45" stroke="#534AB7" stroke-width="1.5"/>
+
+<!-- Transformer polygon: Acc=91→118.3, Interp=72→93.6, General=62→80.6, Adv=38→49.4 -->
+<!-- top: 240, 220-118.3=101.7 | right: 240+93.6=333.6, 220 | bottom: 240, 220+80.6=300.6 | left: 240-49.4=190.6, 220 -->
+<polygon points="240,101.7 333.6,220 240,300.6 190.6,220"
+  fill="#E1F5EE" fill-opacity="0.45" stroke="#0F6E56" stroke-width="1.5"/>
+
+<!-- Multi-label polygon: Acc=80→104, Interp=82→106.6, General=75→97.5, Adv=55→71.5 -->
+<!-- top: 240, 220-104=116 | right: 240+106.6=346.6, 220 | bottom: 240, 220+97.5=317.5 | left: 240-71.5=168.5, 220 -->
+<polygon points="240,116 346.6,220 240,317.5 168.5,220"
+  fill="#FAEEDA" fill-opacity="0.45" stroke="#BA7517" stroke-width="1.5"/>
+
+<!-- Vertex dots - Stylometric -->
+<circle cx="240" cy="135.5" r="4" fill="#534AB7"/>
+<circle cx="357"  cy="220"   r="4" fill="#534AB7"/>
+<circle cx="240" cy="311"   r="4" fill="#534AB7"/>
+<circle cx="129.5" cy="220" r="4" fill="#534AB7"/>
+
+<!-- Vertex dots - Transformer -->
+<circle cx="240"   cy="101.7" r="4" fill="#0F6E56"/>
+<circle cx="333.6" cy="220"   r="4" fill="#0F6E56"/>
+<circle cx="240"   cy="300.6" r="4" fill="#0F6E56"/>
+<circle cx="190.6" cy="220"   r="4" fill="#0F6E56"/>
+
+<!-- Vertex dots - Multi-label -->
+<circle cx="240"   cy="116"   r="4" fill="#BA7517"/>
+<circle cx="346.6" cy="220"   r="4" fill="#BA7517"/>
+<circle cx="240"   cy="317.5" r="4" fill="#BA7517"/>
+<circle cx="168.5" cy="220"   r="4" fill="#BA7517"/>
+
+<!-- Legend -->
+<rect x="460" y="100" width="200" height="130" rx="8" fill="none" stroke="#ddd" stroke-width="0.8"/>
+<text x="560" y="120" text-anchor="middle" font-size="11" font-weight="500" fill="#444" class="legend-text">Detection paradigms</text>
+
+<rect x="476" y="134" width="14" height="14" rx="3" fill="#EEEDFE" stroke="#534AB7" stroke-width="1.2"/>
+<text x="498" y="145" font-size="11" fill="#534AB7" class="legend-text">Stylometric + classical ML</text>
+
+<rect x="476" y="158" width="14" height="14" rx="3" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.2"/>
+<text x="498" y="169" font-size="11" fill="#0F6E56" class="legend-text">Transformer-based</text>
+
+<rect x="476" y="182" width="14" height="14" rx="3" fill="#FAEEDA" stroke="#BA7517" stroke-width="1.2"/>
+<text x="498" y="193" font-size="11" fill="#BA7517" class="legend-text">Multi-label attribution</text>
+
+<text x="560" y="218" text-anchor="middle" font-size="10" fill="#888" class="legend-text">Scores are relative ratings</text>
+<text x="560" y="230" text-anchor="middle" font-size="10" fill="#888" class="legend-text">based on reviewed literature</text>
+
+<!-- Key insight box -->
+<rect x="460" y="250" width="200" height="130" rx="8" fill="#F8F7F3" stroke="#ddd" stroke-width="0.8"/>
+<text x="560" y="270" text-anchor="middle" font-size="11" font-weight="500" fill="#444" class="legend-text">Key trade-offs</text>
+<text x="476" y="292" font-size="10" fill="#534AB7" class="legend-text">Stylometric: best robustness</text>
+<text x="476" y="308" font-size="10" fill="#534AB7" class="legend-text">and interpretability</text>
+<text x="476" y="326" font-size="10" fill="#0F6E56" class="legend-text">Transformers: highest accuracy</text>
+<text x="476" y="342" font-size="10" fill="#0F6E56" class="legend-text">but adversarially vulnerable</text>
+<text x="476" y="360" font-size="10" fill="#BA7517" class="legend-text">Multi-label: richest output,</text>
+<text x="476" y="374" font-size="10" fill="#BA7517" class="legend-text">highest cost</text>
+
+<!-- Note bottom -->
+<text x="240" y="415" text-anchor="middle" font-size="10" fill="#aaa" class="note-text">Larger polygon area = stronger overall profile across all four dimensions</text>
+</svg>
+</body>
+</html>
